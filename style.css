@@ -1,0 +1,217 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Lato', sans-serif;
+    color: #2a9d8f;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 20px;
+}
+
+.image {
+    flex-basis: calc(33% - 40px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.image:hover {
+    transform: scale(1.05);
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .image {
+        flex-basis: calc(50% - 40px);
+    }
+}
+
+@media (max-width: 480px) {
+    .image {
+        flex-basis: 100%;
+    }
+}
+
+
+/*gladstone, this for nav bar */
+
+
+/* Reset some basic elements */
+
+body,
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+/* Style the navigation bar */
+
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    /* Ensure this value is higher than the z-index of other elements */
+}
+
+
+/* Navigation links */
+
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+
+/* Navigation links on hover */
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+
+/* Logo */
+
+.nav-logo {
+    font-weight: bold;
+}
+
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+
+.nav-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.nav-item {
+    display: inline-block;
+}
+
+.nav-link {
+    transition: background-color 0.2s;
+}
+
+@media screen and (max-width: 600px) {
+    .nav-menu,
+    .nav-item {
+        display: block;
+        text-align: center;
+    }
+}
+
+.navbar a:hover,
+.nav-link:hover {
+    background-color: #a7c957;
+    color: #ffffff;
+}
+
+.button {
+    background-color: #f55c47;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #2a9d8f;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.skip-link: focus {
+    left: 0;
+    top: 0;
+    width: auto;
+    height: auto;
+    overflow: visible;
+    z-index: 1000;
+    background-color: #ffffff;
+    color: #000000;
+    padding: 10px;
+    text-align: center;
+}
+
+body,
+html {
+    font-size: 16px;
+}
+
+@media (max-width: 768px) {
+    body,
+    html {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    body,
+    html {
+        font-size: 12px;
+    }
+}
+
+nav a,
+footer a {
+    color: #007BFF;
+    /* Change the color according to your design */
+    text-decoration: none;
+    /* Removes the underline */
+    font-weight: bold;
+}
+
+nav a:hover,
+footer a:hover {
+    text-decoration: underline;
+    /* Adds an underline on hover for visual feedback */
+}

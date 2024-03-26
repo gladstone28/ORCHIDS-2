@@ -1,0 +1,92 @@
+/* Basic Reset */
+
+body,
+h1,
+p,
+a {
+    margin: 0;
+    padding: 0;
+    font-family: 'Georgia', serif;
+}
+
+
+/* Header Styles */
+
+header {
+    background-color: #7C3AED;
+    color: #FFFFFF;
+    padding: 20px;
+    text-align: center;
+}
+
+
+/* Navigation Styles */
+
+nav {
+    background: #6D28D9;
+    padding: 10px 0;
+    text-align: center;
+    z-index: 1000;
+}
+
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    /* Ensure this value is higher than the z-index of other elements */
+}
+
+nav a {
+    color: #FFFFFF;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav a:hover {
+    background-color: #5B21B6;
+}
+
+
+/* Main Content Styles */
+
+main {
+    padding: 20px;
+    background-color: #F3E8FF;
+    color: #4B5563;
+}
+
+article {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+article img {
+    width: 100%;
+    max-width: 400px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+p {
+    text-align: justify;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+
+/* Footer Styles */
+
+footer {
+    background-color: #6D28D9;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

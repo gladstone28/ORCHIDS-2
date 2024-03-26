@@ -1,0 +1,131 @@
+/* Global Styles */
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+
+/* Header Styles */
+
+header {
+    background-color: #6a994e;
+    color: #fff;
+    padding: 20px 40px;
+    text-align: center;
+}
+
+header h1 {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+}
+
+
+/* Navigation Styles */
+
+nav {
+    background: #333;
+    padding: 10px 40px;
+    text-align: center;
+    z-index: 1000;
+}
+
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    /* Ensure this value is higher than the z-index of other elements */
+}
+
+nav a {
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+nav a:hover,
+nav a:focus {
+    background-color: #a7c957;
+}
+
+
+/* Main Content Styles */
+
+main {
+    padding: 20px 40px;
+}
+
+section img {
+    float: left;
+    margin-right: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+section p {
+    text-align: justify;
+    line-height: 1.6;
+}
+
+
+/* Clear floats */
+
+section::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* Footer Styles */
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    font-size: 16px;
+}
+
+
+/* Responsive Images */
+
+img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+
+@media screen and (max-width: 768px) {
+    header,
+    nav,
+    main,
+    footer {
+        padding: 20px;
+    }
+    nav a {
+        display: block;
+        margin-bottom: 10px;
+    }
+    section img {
+        float: none;
+        display: block;
+        margin: 0 auto 20px;
+    }
+}
